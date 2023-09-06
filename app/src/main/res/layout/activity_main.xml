@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tools_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/foto_berita"
+                android:layout_width="0dp"
+                android:layout_height="280dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/john_cenna_deluxe"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/judul_berita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="John Cena's Greatest Feuds "
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/foto_berita" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="John Cena’s debut match in WWE was against Kurt Angle. The Olympic Gold Medalist had issued an open challenge and that was answered by the Cenation leader. It is also to be noted that the first person to force Cena to tap out is Angle. Out of the four times the 16-time World Champion had tapped out, Angle has forced him to submit twice.  The two have battled each other in singles competitions, tag team matches, and multi-men elimination style matches. The majority of the times the two wrestled in one-on-one matches, the Olympic Gold Medalist had mostly picked up the victory.  The last time the two stars faced each other in one-on-one action was a First Blood match. Kurt Angle was the one to pick up the win then as well. The Cenation leader is without a doubt a G.O.A.T in pro wrestling. He became one of the top names in the industry only after his rivalry with John Bradshaw Layfield. It all began after the self-proclaimed Wrestling God helped his protege Orlando Jordan dethrone Cena to capture the United States Championship.  An irate Cena wanted to get his revenge against JBL. Thus, he challenged him to a one-on-one match at the grandest stage of them all, WrestleMania 21. The match was also for the WWE title. The Cenation Leader put on a tough fight and also won the match and his first-ever World Championship.  The two have competed against each other in one-on-one competition a total of seven times out of which Cena has won an astounding six times. John Cena’s debut match in WWE was against Kurt Angle. The Olympic Gold Medalist had issued an open challenge and that was answered by the Cenation leader. It is also to be noted that the first person to force Cena to tap out is Angle. Out of the four times the 16-time World Champion had tapped out, Angle has forced him to submit twice.  The two have battled each other in singles competitions, tag team matches, and multi-men elimination style matches. The majority of the times the two wrestled in one-on-one matches, the Olympic Gold Medalist had mostly picked up the victory.  The last time the two stars faced each other in one-on-one action was a First Blood match. Kurt Angle was the one to pick up the win then as well. The Cenation leader is without a doubt a G.O.A.T in pro wrestling. He became one of the top names in the industry only after his rivalry with John Bradshaw Layfield. It all began after the self-proclaimed Wrestling God helped his protege Orlando Jordan dethrone Cena to capture the United States Championship.  An irate Cena wanted to get his revenge against JBL. Thus, he challenged him to a one-on-one match at the grandest stage of them all, WrestleMania 21. The match was also for the WWE title. The Cenation Leader put on a tough fight and also won the match and his first-ever World Championship.  The two have competed against each other in one-on-one competition a total of seven times out of which Cena has won an astounding six times."
+                app:layout_constraintEnd_toEndOf="@+id/judul_berita"
+                app:layout_constraintStart_toStartOf="@+id/judul_berita"
+                app:layout_constraintTop_toBottomOf="@+id/judul_berita" />
+
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_vertical_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="previous"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_vertical_center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/description" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="next"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline_vertical_center"
+                app:layout_constraintTop_toTopOf="@+id/button" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
